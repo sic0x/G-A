@@ -1,45 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بهذا اليوم الجميل تعرفت عليكِ وازدادت حياتي جمالًا بوجودكِ معي احبُ تغزلكِ بي ونكدكِ علي وحبكِ ليِ وغصبكِ لعدم وجودي بجانبكِ احبُ اهتمامكِ بجميع التفاصيل علاقتنا احبكِ حتى انتهاء الحب من قلبي عندها ساحبكِ بقلب اخر</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            background: linear-gradient(135deg, #7ec6ff, #91e4ff);
-            color: #fff;
-        }
-        h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px;
-        }
-        button {
-            margin-top: 30px;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            background-color: #6ab6ff;
-            border: none;
-            border-radius: 10px;
-            color: #fff;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #549edf;
-        }
-    </style>
+    <title>تحبيني؟</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>أحلى يوم هوه يوم 21.05.2023</h1>
-    <button onclick="location.href='page3.html'">التالي</button>
+    <div class="container">
+        <h1>تحبيني؟ </h1>
+        <a href="page3.html" class="btn">نعم</a>
+        <button id="noBtn" class="btn">لا</button>
+    </div>
+
+    <script>
+        document.getElementById("noBtn").addEventListener("click", function() {
+            this.innerText = "انجبي و اختاري نعم";
+        });
+    </script>
 </body>
 </html>
-
